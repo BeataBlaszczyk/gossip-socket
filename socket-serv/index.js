@@ -22,7 +22,7 @@ io.on("connection", (socket)=>{
         socket.on("add_room", (data)=>{
           console.log("SOCKET")
           console.log(data)
-          socket.emit("new_room", data)
+          io.emit("new_room", data)
         }
         )
   
